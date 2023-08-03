@@ -1,0 +1,24 @@
+#configuring student properties
+ind:
+  stud:
+    rollNo: 11
+    name: Shubham
+    percentage: 84.61
+    
+    nick-names: [Shubh,Dada]
+    
+    contacts[0]: 7020396912
+    contacts[1]: 9921672721
+    
+    colors: [Red,Blue,Orange]
+   
+    
+    iproof:
+      Aadhar: 31576677998
+      Pan: FBBPR1768K
+      
+    clg:
+      id: 4323322
+      name: SIOM
+      addr: Pune
+      

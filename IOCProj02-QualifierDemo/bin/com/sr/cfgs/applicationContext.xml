@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+        
+        <context:component-scan base-package="com.sr.sbeans"></context:component-scan>
+
+<bean id="ldt1" class="java.time.LocalDateTime" factory-method="now" />
+
+<bean id="ldt2" class="java.time.LocalDateTime" factory-method="of">
+<constructor-arg name="year" value="2022" />
+<constructor-arg name="month" value="06"/>
+<constructor-arg name="dayOfMonth" value="15" />
+<constructor-arg name="hour" value="19" />
+<constructor-arg name="minute" value="30" />
+</bean>
+
+<bean id="ldt" class="java.time.LocalDateTime" factory-method="of">
+<constructor-arg name="year" value="2022" />
+<constructor-arg name="month" value="10"/>
+<constructor-arg name="dayOfMonth" value="21" />
+<constructor-arg name="hour" value="12" />
+<constructor-arg name="minute" value="30" />
+</bean>
+
+</beans>
